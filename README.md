@@ -9,6 +9,4 @@ This loads significantly faster, and allows the user to load more items as they 
 - Used Bootstrap for the visual/functionality of the navigation bar for accessibility and optimization purposes.
 
 9/9/23
-- Added a rainbow gradient to header and footer, however the footer contains <a> tags despite not being links.
-This is temporary, I will find a better way to ensure the footer items are aligned.
-- Next on the agenda is to portray the page contents in a more pleasing manner, and finish filling out the text.
+- Added a rainbow gradient to header and footer.

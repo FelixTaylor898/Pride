@@ -4,10 +4,8 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    align-content: normal;
-    padding: 0.25em;
+    align-content: center;
     max-width: 80%;
-    margin-top: 1em;
 }
 
 .rainbow-shadow {
@@ -26,11 +24,18 @@
     padding: 0.3em;
 }
 
-#footer {
+#home-footer {
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 
 #header {
     margin-bottom: 0.5em;
@@ -44,6 +49,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .text-box {
@@ -53,7 +59,7 @@
 .images {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+    align-items: center;
     align-content: center;
 }
 
@@ -66,6 +72,7 @@
     align-content: normal;
 }
 
-.column-item {
-    margin: 0.25em;
+.content {
+    padding-top: 0.25em;
+    padding-bottom: 1em;
 }

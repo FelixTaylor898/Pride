@@ -1,0 +1,29 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 90%;
+    column-gap: 1em;
+}
+
+.about-item {
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+.about-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.about-text {
+    font-size: large;
+}
+
+#team-head {
+    padding-bottom: 0.5em;
+}
