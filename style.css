@@ -3,11 +3,11 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: normal;
+    align-items: center;
     align-content: normal;
-    background-color: white;
     padding: 0.25em;
     max-width: 80%;
+    margin-top: 1em;
 }
 
 .rainbow-shadow {
@@ -33,7 +33,7 @@
 }
 
 #header {
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
 }
 
 .flex-container>div {
@@ -53,6 +53,19 @@
 .images {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-around;
     align-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: normal;
+}
+
+.column-item {
+    margin: 0.25em;
 }
