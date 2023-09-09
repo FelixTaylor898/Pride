@@ -24,7 +24,7 @@
     padding: 0.3em;
 }
 
-#home-footer {
+.home-footer {
     position: fixed;
     bottom: 0;
     width: 100%;

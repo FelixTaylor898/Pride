@@ -23,6 +23,7 @@ a:link {
     align-content: center;
 }
 
-p, a {
+p,
+a {
     font-size: large;
 }

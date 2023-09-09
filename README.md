@@ -13,3 +13,5 @@ This loads significantly faster, and allows the user to load more items as they 
 - Created About page
 - Decided no to great the Spanish contact page, because it doesn't really say anything that needs to be said in a different language,
 and the rest of the website is only in English anyway.
+- Finished volunteer page.
+- TODO: Fix the elements that are marked as "id" even though they are not unique.
