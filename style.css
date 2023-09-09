@@ -1,27 +1,58 @@
 .flex-container {
-    margin-top: 20px;
     display: flex;
-    width: 75%;
-    height: 100%;
-    padding: 15px;
-    gap: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: normal;
+    align-content: normal;
+    background-color: white;
+    padding: 0.25em;
+    max-width: 80%;
+}
+
+.rainbow-shadow {
+    background: linear-gradient(90deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    padding: 0.3em;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#header {
+    margin-bottom: 2em;
+}
+
+.flex-container>div {
+    max-width: 30%;
 }
 
 .center {
     display: flex;
     justify-content: center;
-}
-
-.center>div {
-    padding: 1em;
+    text-align: center;
 }
 
 .text-box {
-    box-shadow: #212529;
-    padding: 1em;
-    border: 5px solid #212529;
-    border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
-max-width: 100%;
+    padding: 0.5em;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
 }
