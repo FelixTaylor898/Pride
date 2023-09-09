@@ -1,0 +1,27 @@
+.flex-container {
+    margin-top: 20px;
+    display: flex;
+    width: 75%;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.center>div {
+    padding: 1em;
+}
+
+.text-box {
+    box-shadow: #212529;
+    padding: 1em;
+    border: 5px solid #212529;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+max-width: 100%;
+}
