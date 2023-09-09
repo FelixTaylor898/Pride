@@ -1,0 +1,28 @@
+#contact-padding {
+    padding: 1em;
+}
+
+.center>img {
+    margin: 1em;
+}
+
+a:link {
+    color: black;
+}
+
+#map {
+    max-width: 100%;
+}
+
+.addresses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+p, a {
+    font-size: large;
+}
