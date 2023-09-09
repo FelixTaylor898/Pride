@@ -1,0 +1,18 @@
+iframe {
+    margin: 1em;
+}
+
+p {
+    font-size: large;
+    text-align: justify;
+}
+
+#vendor-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 50%;
+}
