@@ -15,3 +15,4 @@ This loads significantly faster, and allows the user to load more items as they 
 and the rest of the website is only in English anyway.
 - Finished volunteer page.
 - TODO: Fix the elements that are marked as "id" even though they are not unique.
+- TODO: Some of the nav bars are smaller than others.
