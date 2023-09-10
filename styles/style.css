@@ -25,13 +25,7 @@
 
 }
 
-.home-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-#footer {
+.footer {
     position: relative;
     bottom: 0;
     width: 100%;
@@ -55,10 +49,6 @@
 
 .text-box {
     padding: 0.5em;
-}
-
-li {
-    font-size: large;
 }
 
 .images {
