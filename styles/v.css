@@ -2,17 +2,17 @@ iframe {
     margin: 1em;
 }
 
-p {
+p, li {
     font-size: large;
     text-align: justify;
 }
 
-#vendor-info {
+.v-info {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    max-width: 50%;
+    max-width: 60%;
 }
