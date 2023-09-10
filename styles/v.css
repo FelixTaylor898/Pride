@@ -16,3 +16,7 @@ p, li {
     align-content: center;
     max-width: 60%;
 }
+
+iframe {
+    max-width: 100%;
+}
