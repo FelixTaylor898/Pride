@@ -2,10 +2,6 @@ a:link {
     color: black;
 }
 
-#map>iframe {
-    height: 300px;
-}
-
 .addresses {
     display: flex;
     flex-direction: row;
