@@ -19,3 +19,10 @@
 .left {
     text-align: left;
 }
+
+@media only screen and (max-width: 1000px) {
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

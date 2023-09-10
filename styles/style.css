@@ -68,7 +68,6 @@
 }
 
 .content {
-    padding-top: 0.25em;
     padding-bottom: 1em;
 }
 
@@ -92,10 +91,10 @@
         display:block;
     }
 
-    .header, .footer {
+    .header {
         display: none;
     }
-    .flex-container {
+    .flex-container, .addresses {
         flex-direction: column;
    }
 

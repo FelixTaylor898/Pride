@@ -1,11 +1,3 @@
-#contact-padding {
-    padding: 1em;
-}
-
-.center>img {
-    margin: 1em;
-}
-
 a:link {
     color: black;
 }
@@ -18,13 +10,24 @@ a:link {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
-    gap: 10em;
 }
 
 p,
 a {
     font-size: large;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .addresses {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .contact-padding {
+        max-width: 80%;
+    }
 }
