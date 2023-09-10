@@ -56,6 +56,10 @@
     padding: 0.5em;
 }
 
+li {
+    font-size: large;
+}
+
 .images {
     display: flex;
     flex-direction: column;
