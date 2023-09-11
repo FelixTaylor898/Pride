@@ -132,7 +132,6 @@ class Site extends HTMLElement {
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     
         <!-- Scripts !-->
-        <script src="https://kit.fontawesome.com/7bae310c37.js" crossorigin="anonymous"></script>
         <script src="js/cookie.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
