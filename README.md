@@ -1,2 +1,2 @@
 # Pride-Site
-Reconstructing the website for Shenandoah Valley Pride with the intent of donating my source code when it's complete.
+Reconstructing the website for Shenandoah Valley Pride. Ensuring accessibility, mobile compatibility, optimization, and fixing browser errors.
