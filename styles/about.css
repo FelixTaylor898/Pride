@@ -16,8 +16,12 @@
     justify-content: flex-start;
 }
 
-.left {
+p, h3 {
     text-align: left;
+}
+
+p, li {
+    font-size: large;
 }
 
 @media only screen and (max-width: 1000px) {
