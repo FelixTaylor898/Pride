@@ -1,33 +1,31 @@
 a:link {
-    color: black;
+    color:#000
 }
-
+    
 #map>iframe {
-    height: 300px;
+    height:300px
 }
-
+    
 .addresses {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    align-items:center;
+    align-content:center
 }
-
-p,
-a {
-    font-size: large;
+    
+p,a {
+    font-size:large
 }
-
+    
 @media only screen and (max-width: 1000px) {
-
     .addresses {
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction:column;
+        justify-content:flex-start
     }
-
+    
     .contact-padding {
-        max-width: 80%;
+        max-width:80%
     }
 }

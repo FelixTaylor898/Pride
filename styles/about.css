@@ -1,32 +1,32 @@
 .about-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 90%;
-    column-gap: 1em;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    max-width:90%;
+    column-gap:1em
 }
-
+    
 .about-item {
-    margin: 0.5em;
-    display: flex;
-    align-items: center;
+    margin:.5em;
+    display:flex;
+    align-items:center
 }
-
+    
 .about-box {
-    display: flex;
-    justify-content: flex-start;
+    display:flex;
+    justify-content:flex-start
 }
-
-p, h3 {
-    text-align: left;
+    
+p,h3 {
+    text-align:left
 }
-
-p, li {
-    font-size: large;
+    
+p,li {
+    font-size:large
 }
-
+    
 @media only screen and (max-width: 1000px) {
     .about-grid {
-        display: flex;
-        flex-direction: column;
+        display:flex;
+        flex-direction:column
     }
 }

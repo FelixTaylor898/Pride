@@ -1,22 +1,22 @@
 iframe {
-    margin: 1em;
+    margin:1em
 }
-
-p, li {
-    font-size: large;
-    text-align: left;
+    
+p,li {
+    font-size:large;
+    text-align:left
 }
-
+    
 .v-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    max-width: 60%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    max-width:60%
 }
-
+    
 iframe {
-    max-width: 100%;
+    max-width:100%
 }
