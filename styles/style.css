@@ -71,6 +71,12 @@
     display:none;
     margin-bottom:.25em
 }
+
+.mobile-footer {
+    display: none;
+    margin-bottom:.25em
+
+}
     
 @media only screen and (max-width: 1000px) {
     .mobile {
@@ -79,6 +85,16 @@
     
     .header {
         display:none
+    }
+
+    .footer {
+        display:none;
+    }
+
+    .mobile-footer {
+        display:block;
+        font-size: 0.75em
+
     }
     
     .flex-container,.addresses {

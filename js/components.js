@@ -36,7 +36,7 @@ class Header extends HTMLElement {
                   </div>
               </nav>
           </div>
-  
+
           <div class="header">
               <div class="rainbow-shadow">
                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -78,10 +78,22 @@ class Footer extends HTMLElement {
         this.innerHTML = `    
       <!-- Footer !-->
       <section aria-label="Web page footer">
-          <div class="rainbow-shadow">
-              <div class="footer">
+          <div class="mobile-footer">
+              <div class="rainbow-shadow">
                   <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
-                      <div class="container-fluid"><a class="navbar-brand">&copy; 2023 | Shenandoah Valley Pride
+                      <div class="container-fluid"><a class="navbar-brand">&copy; 2024 | Shenandoah Valley Pride
+                              Alliance
+                              Inc.</a>
+                      </div>
+                  </footer>
+              </div>
+          </div>
+
+          <div class="footer">
+
+              <div class="rainbow-shadow">
+                  <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
+                      <div class="container-fluid"><a class="navbar-brand">&copy; 2024 | Shenandoah Valley Pride
                               Alliance
                               Inc.</a>
                           <div class="collapse navbar-collapse">
@@ -105,7 +117,7 @@ class Footer extends HTMLElement {
                   </footer>
               </div>
           </div>
-      </section>  
+      </section>
       `;
     }
 }
