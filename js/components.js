@@ -19,7 +19,6 @@ class Header extends HTMLElement {
                               <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                               <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                               <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                              <li class="nav-item"><a class="nav-link" href="pageant.html">Pageant</a></li>
                           </ul>
                           <ul class="navbar-nav d-flex flex-row me-1">
                               <li class="nav-item me-3 me-lg-0">
@@ -51,7 +50,6 @@ class Header extends HTMLElement {
                                   <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                                   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                                   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                                  <li class="nav-item"><a class="nav-link" href="pageant.html">Pageant</a></li>
 
                               </ul>
                               <ul class="navbar-nav d-flex flex-row me-1">
