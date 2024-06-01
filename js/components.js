@@ -6,7 +6,7 @@ class Header extends HTMLElement {
           <div class="mobile rainbow-shadow">
               <nav class="navbar navbar-dark bg-dark">
                   <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">Home</a>
+                      <a class="navbar-brand" href="/">Home</a>
                       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                           data-target="#collapsingNavbar3Home">
                           <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@ class Header extends HTMLElement {
               <div class="rainbow-shadow">
                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                       <div class="container-fluid">
-                          <a class="navbar-brand" href="index.html">Home</a>
+                          <a class="navbar-brand" href="/">Home</a>
                           <div class="collapse navbar-collapse">
                               <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-fill w-100">
                                   <li class="nav-item"><a class="nav-link" href="vendors.html">Vendors</a></li>
