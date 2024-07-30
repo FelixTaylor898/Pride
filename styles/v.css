@@ -4,7 +4,7 @@ iframe {
     
 p,li {
     font-size:large;
-    text-align:left
+    text-align:justify
 }
     
 .v-info {
@@ -19,4 +19,8 @@ p,li {
     
 iframe {
     max-width:100%
+}
+
+#note {
+    padding-top: 1rem;
 }
