@@ -7,7 +7,7 @@ class Header extends HTMLElement {
               <nav class="navbar navbar-dark bg-dark">
                   <div class="container-fluid">
                       <a class="navbar-brand" href="index.html">Home</a>
-                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-label="Menu toggle"
                           data-target="#collapsingNavbar3Home">
                           <span class="navbar-toggler-icon"></span>
                       </button>
@@ -21,12 +21,12 @@ class Header extends HTMLElement {
                           </ul>
                           <ul class="navbar-nav d-flex flex-row me-1">
                               <li class="nav-item me-3 me-lg-0">
-                                  <a title="Shop & Donate" class="nav-link"
+                                  <a title="Shop & Donate" class="nav-link" aria-label="Online store"
                                       href="https://shenandoahvalleypride-108313.square.site/" target="_blank"><i
                                           class="fa-solid fa-cart-shopping"></i></a>
                               </li>
                               <li class="nav-item me-3 me-lg-0">
-                                  <a title="Facebook" class="nav-link"
+                                  <a title="Facebook" class="nav-link" aria-label="Facebook"
                                       href="https://www.facebook.com/shenandoahvalleypride/" target="_blank"><i
                                           class="fa-brands fa-facebook"></i></a>
                               </li>
@@ -52,12 +52,12 @@ class Header extends HTMLElement {
                               </ul>
                               <ul class="navbar-nav d-flex flex-row me-1">
                                   <li class="nav-item me-3 me-lg-0">
-                                      <a title="Shop & Donate" class="nav-link"
+                                      <a title="Shop & Donate" class="nav-link" aria-label="Online store"
                                           href="https://shenandoahvalleypride-108313.square.site/" target="_blank"><i
                                               class="fa-solid fa-cart-shopping"></i></a>
                                   </li>
                                   <li class="nav-item me-3 me-lg-0">
-                                      <a title="Facebook" class="nav-link"
+                                      <a title="Facebook" class="nav-link" aria-label="Facebook"
                                           href="https://www.facebook.com/shenandoahvalleypride/" target="_blank"><i
                                               class="fa-brands fa-facebook"></i></a>
                                   </li>
@@ -104,10 +104,10 @@ class Footer extends HTMLElement {
                                           Emoji by Icon Twitter Emoji </a></li>
                               </ul>
                               <ul class="navbar-nav d-flex flex-row me-1">
-                                  <li class="nav-item me-3 me-lg-0"><a title="Shop & Donate" class="nav-link"
+                                  <li class="nav-item me-3 me-lg-0"><a title="Shop & Donate" class="nav-link" aria-label="Online store"
                                           href="https://shenandoahvalleypride-108313.square.site/" target="_blank"><i
                                               class="fa-solid fa-cart-shopping"></i></a></li>
-                                  <li class="nav-item me-3 me-lg-0"><a title="Facebook" class="nav-link"
+                                  <li class="nav-item me-3 me-lg-0"><a title="Facebook" class="nav-link" aria-label="Facebook"
                                           href="https://www.facebook.com/shenandoahvalleypride/" target="_blank"><i
                                               class="fa-brands fa-facebook"></i></a></li>
                               </ul>
