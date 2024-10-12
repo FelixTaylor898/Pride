@@ -1,5 +1,6 @@
 class Header extends HTMLElement {
-    connectedCallback() {
+        constructor() {
+            super();
         this.innerHTML = `
       <!-- Navigation !-->
       <section aria-label="Navigation links">
@@ -7,11 +8,11 @@ class Header extends HTMLElement {
               <nav class="navbar navbar-dark bg-dark">
                   <div class="container-fluid">
                       <a class="navbar-brand" href="index.html">Home</a>
-                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-label="Menu toggle"
-                          data-target="#collapsingNavbar3Home">
+                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-label="Menu toggle" aria-haspopup="true"
+                          aria-expanded="false" aria-controls="collapsingNavbar3Home" data-target="#collapsingNavbar3Home" id="menu-button>
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home">
+                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home" aria-hidden="true">
                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                               <li class="nav-item"><a class="nav-link" href="perform.html">Perform</a></li>
@@ -71,7 +72,23 @@ class Header extends HTMLElement {
   
       `;
     }
+    connectedCallback() {
+        const button = this.querySelector('#menu-button');
+        const menu = this.querySelector('#collapsingNavbar3Home');
+
+        // Event listener for toggling the aria-expanded and aria-hidden attributes
+        button.addEventListener('click', () => {
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Toggle aria-expanded on the button
+            button.setAttribute('aria-expanded', !isExpanded);
+
+            // Toggle aria-hidden on the menu
+            menu.setAttribute('aria-hidden', isExpanded ? 'true' : 'false');
+        });
+    }
 }
+
 class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `    
@@ -123,3 +140,4 @@ class Footer extends HTMLElement {
 
 customElements.define('rb-header', Header);
 customElements.define('rb-footer', Footer);
+
