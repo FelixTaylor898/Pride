@@ -13,7 +13,7 @@ class Header extends HTMLElement {
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="navbar-collapse collapse" id="collapsingNavbar3Home">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-list" aria-hidden="true">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-list">
                               <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                               <li class="nav-item"><a class="nav-link" href="perform.html">Perform</a></li>
                               <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
@@ -84,7 +84,6 @@ class Header extends HTMLElement {
             button.setAttribute('aria-expanded', !isExpanded);
 
             // Toggle aria-hidden on the menu
-            menu.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
         });
     }
 }
