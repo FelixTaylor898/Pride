@@ -64,6 +64,11 @@ body {
 
 .hero-content p {
 	font-size: larger;
+    text-align: center;
+}
+
+.left {
+    text-align: left;
 }
 
 .flex-container {

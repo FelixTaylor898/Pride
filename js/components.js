@@ -84,7 +84,7 @@ class Header extends HTMLElement {
             button.setAttribute('aria-expanded', !isExpanded);
 
             // Toggle aria-hidden on the menu
-            menu.setAttribute('aria-hidden', isExpanded ? 'true' : 'false');
+            menu.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
         });
     }
 }
