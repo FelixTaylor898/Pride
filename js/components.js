@@ -12,8 +12,8 @@ class Header extends HTMLElement {
                           aria-expanded="false" aria-controls="collapsingNavbar3Home" data-target="#collapsingNavbar3Home" id="menu-button>
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home" aria-hidden="true">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-list" aria-hidden="true">
                               <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                               <li class="nav-item"><a class="nav-link" href="perform.html">Perform</a></li>
                               <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
@@ -74,7 +74,7 @@ class Header extends HTMLElement {
     }
     connectedCallback() {
         const button = this.querySelector('#menu-button');
-        const menu = this.querySelector('#collapsingNavbar3Home');
+        const menu = this.querySelector('#menu-list');
 
         // Event listener for toggling the aria-expanded and aria-hidden attributes
         button.addEventListener('click', () => {
