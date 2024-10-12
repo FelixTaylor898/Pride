@@ -1,25 +1,24 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    position: relative;
-    /* Position relative for absolute child */
-    overflow: hidden;
-    /* Hide overflow for smooth transition */
-    display: flex;
-    /* Enable Flexbox */
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    text-align: center;
-    background: black;
+	height: 100vh;
+	position: relative;
+	/* Position relative for absolute child */
+	overflow: hidden;
+	/* Hide overflow for smooth transition */
+	display: flex;
+	/* Enable Flexbox */
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+	text-align: center;
+	background: black;
 }
 
 /* Image */
@@ -27,386 +26,427 @@ body {
 
 /* Show the image after loading */
 .hero-image.visible {
-    opacity: 1;
-    /* Fade in */
+	opacity: 1;
+	/* Fade in */
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    /* Stacks the heading and paragraph vertically */
-    justify-content: center;
-    align-items: center;
-    /* Centers the content horizontally */
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent black background */
-    border-radius: 8px;
-    max-width: 750px;
-    /* Limits the width of the content */
-    position: relative;
-    /* Position relative to overlay on the image */
-    color: #fff;
-    position: absolute;
-    /* Position absolute to center in viewport */
-    top: 45%;
-    /* Move down 50% of the viewport height */
-    left: 50%;
-    /* Move right 50% of the viewport width */
-    transform: translate(-50%, -50%);
-    /* Center the content */
-    color: #fff;
-    z-index: 1;
-    /* Ensure text is above the image */
-    text-align: center;
-    /* Center text alignment */
-    padding: 10px 20px;
-    /* Responsive padding */
+	display: flex;
+	flex-direction: column;
+	/* Stacks the heading and paragraph vertically */
+	justify-content: center;
+	align-items: center;
+	/* Centers the content horizontally */
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Semi-transparent black background */
+	border-radius: 8px;
+	max-width: 750px;
+	/* Limits the width of the content */
+	position: relative;
+	/* Position relative to overlay on the image */
+	color: #fff;
+	position: absolute;
+	/* Position absolute to center in viewport */
+	top: 45%;
+	/* Move down 50% of the viewport height */
+	left: 50%;
+	/* Move right 50% of the viewport width */
+	transform: translate(-50%, -50%);
+	/* Center the content */
+	color: #fff;
+	z-index: 1;
+	/* Ensure text is above the image */
+	text-align: center;
+	/* Center text alignment */
+	padding: 10px 20px;
+	/* Responsive padding */
 }
 
 .hero-content p {
-    font-size: larger;
+	font-size: larger;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    max-width: 80%
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	max-width: 80%
 }
 
 .footer {
-    position: relative;
-    bottom: 0;
-    width: 100%
+	position: relative;
+	bottom: 0;
+	width: 100%
 }
 
 
 .flex-container>div {
-    max-width: 30%
+	max-width: 30%
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center
 }
 
 .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch
 }
 
 
 .rainbow-btn {
-    border-radius: .5em;
-    transition: 0.5s ease, transform 0.3s ease;
-    transform: scale(1); /* Initial scale */
-    margin-right: 20px; /* Adjust the space between buttons */
-    margin-top: 0.5rem;
+	border-radius: .5em;
+	transition: 0.5s ease, transform 0.3s ease;
+	transform: scale(1);
+	/* Initial scale */
+	margin-right: 20px;
+	/* Adjust the space between buttons */
+	margin-top: 0.5rem;
 
 }
 
 .readjust {
-    max-width: 100%;
-    width: auto;
-    margin: auto
+	max-width: 100%;
+	width: auto;
+	margin: auto
 }
 
 .mobile {
-    display: none;
+	display: none;
 }
 
 .mobile-footer {
-    display: none;
-    padding-bottom: 0.5rem;
+	display: none;
+	padding-bottom: 0.5rem;
 }
 
 #pageant {
-    width: 800px;
-    height: auto
+	width: 800px;
+	height: auto
 }
-
 
 
 h1 {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 #wrapper>*>.inner {
-    width: 100%;
-    max-width: 68em;
-    margin: 0 auto;
-    padding: 0 2.5em;
+	width: 100%;
+	max-width: 68em;
+	margin: 0 auto;
+	padding: 0 2.5em;
 }
-
-
 
 
 #header {
-    padding: 2em 0 0.1em 0;
+	padding: 2em 0 0.1em 0;
 }
 
 #header .logo {
-    display: block;
-    color: inherit;
-    font-weight: 900;
-    letter-spacing: 0.35em;
-    margin: 0 0 1em 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
+	display: block;
+	color: inherit;
+	font-weight: 900;
+	letter-spacing: 0.35em;
+	margin: 0 0 1em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
 }
 
 #header .logo>* {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 #header .logo .symbol {
-    margin-right: 0.65em;
+	margin-right: 0.65em;
 }
 
 #header .logo .symbol img {
-    display: block;
-    width: auto;
-    height: 2em;
+	display: block;
+	width: auto;
+	height: 2em;
 }
 
-.center > img {
-    margin-bottom: 1rem;
+.center>img {
+	margin-bottom: 1rem;
 }
-
 
 
 #wrapper>*>.inner {
-    width: 100%;
-    max-width: 68em;
-    margin: 0 auto;
-    padding: 0 2.5em;
+	width: 100%;
+	max-width: 68em;
+	margin: 0 auto;
+	padding: 0 2.5em;
 }
 
 
-
-
 #main {
-    padding: 0em 0 2em 0;
+	padding: 0em 0 2em 0;
 }
 
 
 .justify {
-    text-align: justify;
+	text-align: justify;
 }
 
 .details {
-    padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+	box-sizing: border-box;
+	/* Include padding and border in element's total width and height */
 }
 
 .container {
-    display: flex; /* Use Flexbox for layout */
-    flex-direction: row; /* Arrange children in a row */
-    justify-content: space-between; /* Space between columns */
-    gap: 2rem;
-    margin: 20px; /* Add some margin around the container */
+	display: flex;
+	/* Use Flexbox for layout */
+	flex-direction: row;
+	/* Arrange children in a row */
+	justify-content: space-between;
+	/* Space between columns */
+	gap: 2rem;
+	margin: 20px;
+	/* Add some margin around the container */
 }
 
 
 .left-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column; /* Ensures content in the left column stacks vertically */
-    justify-content: flex-start; /* Aligns content at the top */
-    margin-right: 20px; /* Space between columns */
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/* Ensures content in the left column stacks vertically */
+	justify-content: flex-start;
+	/* Aligns content at the top */
+	margin-right: 20px;
+	/* Space between columns */
 }
 
 #map iframe {
-    width: 100%;
-    height: 300px;
+	width: 100%;
+	height: 300px;
 }
-
-
 
 
 .rainbow-btn:hover {
-    transform: scale(1.1); /* Scale the element up slightly on hover */
+	transform: scale(1.1);
+	/* Scale the element up slightly on hover */
 }
 
 #header .inner {
-    display: flex;
-    justify-content: space-between; /* Spread title and PridePays logo apart */
-    align-items: center; /* Vertically align content */
-    padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	/* Spread title and PridePays logo apart */
+	align-items: center;
+	/* Vertically align content */
+	padding: 10px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .symbol img {
-    width: 40px; /* Adjust the size of the rainbow emoji */
-    height: auto;
-    margin-right: 15px; /* Space between emoji and text */
+	width: 40px;
+	/* Adjust the size of the rainbow emoji */
+	height: auto;
+	margin-right: 15px;
+	/* Space between emoji and text */
 }
 
 .title-wrapper {
-    display: flex;
-    flex-direction: column; /* Stack the title and subtitle */
+	display: flex;
+	flex-direction: column;
+	/* Stack the title and subtitle */
 }
 
 .title {
-    font-size: 1.5em;
-    font-weight: bold;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .subtitle {
-    font-size: 1em;
-    color: #aaa; /* Optional styling for the subtitle */
+	font-size: 1em;
+	color: #aaa;
+	/* Optional styling for the subtitle */
 }
 
 .pridepays-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the logo and caption */
-    margin-left: auto; /* Push the PridePays logo to the far right */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Center the logo and caption */
+	margin-left: auto;
+	/* Push the PridePays logo to the far right */
 }
 
 .small-logo {
-    width: 100px; /* Adjust the size of the PridePays logo */
-    height: auto;
+	width: 100px;
+	/* Adjust the size of the PridePays logo */
+	height: auto;
 }
 
 .pridepays-caption {
-    font-size: 0.85em;
-    color: #aaa; /* Adjust color to match the design */
-    margin-top: 5px; /* Add space between logo and caption */
-    text-align: center;
+	font-size: 0.85em;
+	color: #aaa;
+	/* Adjust color to match the design */
+	margin-top: 5px;
+	/* Add space between logo and caption */
+	text-align: center;
 }
 
 .main {
-    display: flex; /* Use flexbox on the body */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+	display: flex;
+	/* Use flexbox on the body */
+	justify-content: center;
+	/* Center content horizontally */
+	align-items: center;
+	/* Center content vertically */
+	height: 100vh;
+	/* Full viewport height */
+	margin: 0;
+	/* Remove default margin */
 }
 
 .image-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center items horizontally */
-    align-items: center;
-    gap: 10px; /* Space between images */
+	display: flex;
+	/* Use flexbox for alignment */
+	justify-content: center;
+	/* Center items horizontally */
+	align-items: center;
+	gap: 10px;
+	/* Space between images */
 }
 
 .image-item {
-    max-width: auto; /* Ensure images are responsive */
-    height: 80%; /* Maintain aspect ratio */
+	width: auto;
+	/* Ensure images are responsive */
+	height: 80%;
+	/* Maintain aspect ratio */
 }
-
 
 
 @media only screen and (max-width: 1000px) {
 
-    .symbol {
-        margin-bottom: 0.2rem;
-    }
+	.symbol {
+		margin-bottom: 0.2rem;
+	}
 
-    #wrapper {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
+	#wrapper {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 
-    .container {
-        flex-direction: column; /* Stacks columns vertically on smaller screens */
-    }
+	.container {
+		flex-direction: column;
+		/* Stacks columns vertically on smaller screens */
+	}
 
-    .facebook-container {
-        width: 100%; /* Full width on small screens */
-        margin-bottom: 1rem;
-    }
-
-
-    
-    #wrapper>*>.inner {
-        padding: 0 1.25em;
-    }
-    .mobile {
-        display: block
-    }
-
-    .addresses p {
-        margin-bottom: 0rem;
-    }
-
-    .addresses > .rainbow-btn {
-        margin-top: 0rem;
-    }
-
-    .addresses {
-        margin-bottom: 1rem;
-    }
-
-    .header {
-        display: none
-    }
-
-    .footer {
-        display: none;
-    }
-
-    .mobile-footer {
-        display: block;
-        font-size: 0.75em;
-        width: 100%;
-    }
-
-    .flex-container,
-    .addresses {
-        flex-direction: column
-    }
-
-    .flex-container>div {
-        max-width: 80%
-    }
+	.facebook-container {
+		width: 100%;
+		/* Full width on small screens */
+		margin-bottom: 1rem;
+	}
 
 
-        #wrapper>*>.inner {
-            padding: 0 1.25em;
-        }
+	#wrapper>*>.inner {
+		padding: 0 1.25em;
+	}
 
-        #header {
-            padding: 2em 0 0.1em 0;
-        }
+	.mobile {
+		display: block
+	}
 
-        .image-container {
-            flex-direction: column;
-            gap: 1rem;
-            margin-bottom: 0;
-        }
+	.addresses p {
+		margin-bottom: 0rem;
+	}
 
-        .pridepays-logo {
-            margin-left: 0.5rem;
-        }
+	.addresses>.rainbow-btn {
+		margin-top: 0rem;
+	}
 
-    
-    
+	.addresses {
+		margin-bottom: 1rem;
+	}
+
+	.header {
+		display: none
+	}
+
+	.footer {
+		display: none;
+	}
+
+	.mobile-footer {
+		display: block;
+		font-size: 0.75em;
+		width: 100%;
+	}
+
+	.flex-container,
+	.addresses {
+		flex-direction: column
+	}
+
+	.flex-container>div {
+		max-width: 80%
+	}
+
+
+	#wrapper>*>.inner {
+		padding: 0 1.25em;
+	}
+
+	#header {
+		padding: 2em 0 0.1em 0;
+	}
+
+	.image-container {
+		flex-direction: column;
+		gap: 1rem;
+		margin-bottom: 0;
+	}
+
+	.pridepays-logo {
+		margin-left: 0.5rem;
+	}
+
+    .hero {
+		height: auto;
+		/* Adjust height dynamically for smaller screens */
+	}
+
+	.hero-image {
+		position: relative;
+		min-height: 50vh;
+		/* Set a minimum height so image doesn't disappear */
+		height: auto;
+		/* Let height adjust naturally */
+		background-size: contain;
+		/* Contain image within the section */
+	}
+
+	.hero-content {
+		padding: 1em;
+	}
+
+
 }
-
-/*

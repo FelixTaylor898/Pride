@@ -1,105 +1,123 @@
 .rainbow-shadow {
-    background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
-    padding: .5em
+	background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
+	padding: .5em
 }
 
 .divider {
-    height: 10px;
-    /* Height of the divider line */
-    background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
+	height: 10px;
+	/* Height of the divider line */
+	background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
 
-    margin: 0;
+	margin: 0;
 }
 
 /* Set the hero section to occupy the full viewport height */
 .hero {
-    position: relative;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Ensure no overflow */
+	position: relative;
+	height: 100vh;
+	/* Full viewport height */
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/* Ensure no overflow */
 }
 
 /* Hero image to cover the whole section */
 .hero-image {
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background: url('https://i.imgur.com/rU07yJX.jpeg') no-repeat center center;
-    background-size: cover; /* Ensures it covers the entire area */
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
-    opacity: 0; /* Start invisible */
-    transition: opacity 1s ease-out; /* Smooth opacity transition */
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	background: url('https://i.imgur.com/rU07yJX.jpeg') no-repeat center center;
+	background-size: cover;
+	/* Ensures it covers the entire area */
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/* Start invisible */
+	transition: opacity 1s ease-out;
+	/* Smooth opacity transition */
 }
 
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
 
-    #facebook {
-        width: 97%;
-    }
+	#facebook {
+		width: 97%;
+	}
 
-    .hero {
-        height: auto; /* Adjust height dynamically for smaller screens */
-    }
+	.hero {
+		height: auto;
+		/* Adjust height dynamically for smaller screens */
+	}
 
-    .hero-image {
-        position: relative;
-        min-height: 50vh; /* Set a minimum height so image doesn't disappear */
-        height: auto; /* Let height adjust naturally */
-        background-size: contain; /* Contain image within the section */
-    }
+	.hero-image {
+		position: relative;
+		min-height: 50vh;
+		/* Set a minimum height so image doesn't disappear */
+		height: auto;
+		/* Let height adjust naturally */
+		background-size: contain;
+		/* Contain image within the section */
+	}
 
-    .hero-content {
-        padding: 1em;
-    }
+	.hero-content {
+		padding: 1em;
+	}
 }
 
 
 .spinner {
-    border: 8px solid #FFA500;
-    border-top: 8px solid #FF0000;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
+	border: 8px solid #FFA500;
+	border-top: 8px solid #FF0000;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
 }
 
 .spinner2 {
-    border: 8px solid #008000;
-    border-top: 8px solid #FFFF00;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
+	border: 8px solid #008000;
+	border-top: 8px solid #FFFF00;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .spinner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px; /* Same width as iframe-container */
-    height: 600px; /* Same height as iframe-container */
-    position: absolute; /* Overlay on top of the iframe-container */
-    z-index: 50; /* Spinner on top of everything else */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 650px;
+	/* Same width as iframe-container */
+	height: 600px;
+	/* Same height as iframe-container */
+	position: absolute;
+	/* Overlay on top of the iframe-container */
+	z-index: 50;
+	/* Spinner on top of everything else */
 }
 
 .iframe-container {
-    transition: opacity 0.5s ease-in; /* Smooth transition for appearance */
-    opacity: 0;
-    display: inline-block; /* Allow the container to only wrap around the iframe */
-    background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
-    border-radius: 10px;
-    padding: 0.5rem;
+	transition: opacity 0.5s ease-in;
+	/* Smooth transition for appearance */
+	opacity: 0;
+	display: inline-block;
+	/* Allow the container to only wrap around the iframe */
+	background: linear-gradient(90deg, #FF0000 0%, #FFA500 20%, #FFFF00 40%, #008000 60%, #0000FF 80%, #800080 100%);
+	border-radius: 10px;
+	padding: 0.5rem;
 }

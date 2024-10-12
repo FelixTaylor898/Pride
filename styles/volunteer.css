@@ -1,85 +1,121 @@
 .rainbow-shadow {
-    background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
-    padding: .5em;
+	background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
+	padding: .5em;
 }
 
 
 .divider {
-    height: 10px;
-    /* Height of the divider line */
-    background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
+	height: 10px;
+	/* Height of the divider line */
+	background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
 
-    margin: 0;
+	margin: 0;
 }
 
 
 .link {
-    color: #A30262;
+	color: #A30262;
 }
 
 .link:hover {
-    color: #B55690;
+	color: #B55690;
 }
 
 .iframe-container {
-    display: inline-block; /* Allow the container to only wrap around the iframe */
-    background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
-    border-radius: 10px;
-    margin-top: 1rem;
-    transition: opacity 0.5s ease-in; /* Smooth transition for appearance */
-    opacity: 0;
+	display: inline-block;
+	background: linear-gradient(90deg, #D52D00 0%, #EF7627 16.66%, #FF9A56 33.33%, #FFFFFF 50%, #D162A4 66.66%, #B55690 83.33%, #A30262 100%);
+	border-radius: 10px;
+	margin-top: 1rem;
+	transition: opacity 0.5s ease-in;
+	opacity: 0;
+	width: 100%;
+	/* Make container take full width on mobile */
+	max-width: 700px;
+	/* Prevent it from becoming too large on wider screens */
+	box-sizing: border-box;
+	/* Ensure padding/borders don't exceed width */
 }
 
 .iframe-container iframe {
-    border: none; /* Remove default iframe border */
-    border-radius: 10px; /* Make the iframe corners match the container */
+	border: none;
+	border-radius: 10px;
+	width: 95%;
+	/* Make iframe take full width of container */
+	height: 650px;
+	/* Set a default height for the iframe */
+	box-sizing: border-box;
+	/* Ensure proper sizing */
 }
 
 #gradient-iframe {
-    border: none;
+	border: none;
 }
 
 .spinner {
-    border: 8px solid #FF9A56;
-    border-top: 8px solid #D52D00;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
+	border: 8px solid #FF9A56;
+	border-top: 8px solid #D52D00;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .spinner-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 650px; /* Same width as iframe-container */
-    height: 600px; /* Same height as iframe-container */
-    position: absolute; /* Overlay on top of the iframe-container */
-    z-index: 50; /* Spinner on top of everything else */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 650px;
+	/* Same width as iframe-container */
+	height: 600px;
+	/* Same height as iframe-container */
+	position: absolute;
+	/* Overlay on top of the iframe-container */
+	z-index: 50;
+	/* Spinner on top of everything else */
 }
 
 .hero-image {
-    height: 100%;
-    width: 100%;
-    background: url('https://i.imgur.com/0xuYAtA.jpeg') no-repeat center center;
-    background-size: cover;
-    position: absolute;
-    /* Position absolute to overlap text */
-    top: 0;
-    /* Align to the top */
-    left: 0;
-    /* Align to the left */
-    opacity: 0;
-    /* Start invisible */
-    transition: transform 1s ease-out, opacity 1s ease-out;
-    /* Smooth transition */
+	height: 100%;
+	width: 100%;
+	background: url('https://i.imgur.com/0xuYAtA.jpeg') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	/* Position absolute to overlap text */
+	top: 0;
+	/* Align to the top */
+	left: 0;
+	/* Align to the left */
+	opacity: 0;
+	/* Start invisible */
+	transition: transform 1s ease-out, opacity 1s ease-out;
+	/* Smooth transition */
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+
+
+	.iframe-container {
+		width: 90%;
+		/* Full width on smaller screens */
+		max-width: 100%;
+		/* No restriction on mobile */
+	}
+
+	.iframe-container iframe {
+		width: 90%;
+		/* Allow the iframe height to adjust for content */
+	}
 }
