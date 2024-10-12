@@ -1,0 +1,16 @@
+.rainbow-shadow {
+    background: linear-gradient(90deg, 
+        #FF218C 0%,       /* Magenta */
+        #FF218C 30%,      /* Hold Magenta until 30% */
+        #FFD800 35%,      /* Blend into Yellow */
+        #FFD800 65%,      /* Hold Yellow until 65% */
+        #21B1FF 70%,      /* Blend into Cyan */
+        #21B1FF 100%      /* Cyan from 70% to 100% */
+    );
+    padding: .5em;
+}
+
+
+p, li, a {
+    font-size: large;
+}

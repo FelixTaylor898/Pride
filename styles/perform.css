@@ -1,0 +1,85 @@
+.rainbow-shadow {
+    background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+    padding: .5em;
+}
+
+.divider {
+    height: 10px;
+    /* Height of the divider line */
+    background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+
+    margin: 0;
+}
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+    background: url('https://i.imgur.com/sS04jYx.jpeg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    /* Position absolute to overlap text */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    opacity: 0;
+    /* Start invisible */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    /* Smooth transition */
+}
+
+
+
+.link {
+    color: #D60270;
+}
+
+.link:hover {
+    color: #0038A8;
+}
+
+.iframe-container {
+    display: inline-block; /* Allow the container to only wrap around the iframe */
+    background: linear-gradient(90deg, #D60270 0%, #9B4F96 50%, #0038A8 100%);
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: opacity 0.5s ease-in; /* Smooth transition for appearance */
+    opacity: 0;
+}
+
+.iframe-container iframe {
+    border: none; /* Remove default iframe border */
+    border-radius: 10px; /* Make the iframe corners match the container */
+}
+
+#gradient-iframe {
+    border: none;
+}
+
+.spinner {
+    border: 8px solid #0038A8;
+    border-top: 8px solid #D60270;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px; /* Same width as iframe-container */
+    height: 600px; /* Same height as iframe-container */
+    position: absolute; /* Overlay on top of the iframe-container */
+    z-index: 50; /* Spinner on top of everything else */
+}

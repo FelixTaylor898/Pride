@@ -1,0 +1,52 @@
+.rainbow-shadow {
+    background: linear-gradient(90deg, 
+        #000000 0%,        /* Black */
+        #9ad9ea 12.5%,     /* Light Blue */
+        #00a3e8 25%,       /* Bright Blue */
+        #b5e51d 37.5%,     /* Lime Green */
+        #ffffff 50%,       /* White */
+        #ffc90d 62.5%,     /* Bright Yellow */
+        #fc6667 75%,       /* Coral Red */
+        #feaec9 87.5%,     /* Pink */
+        #000000 100%);     /* Black */
+    padding: .5em;
+}
+
+
+.divider {
+    height: 10px;
+    /* Height of the divider line */
+    background: linear-gradient(90deg, 
+        #000000 0%,        /* Black */
+        #9ad9ea 12.5%,     /* Light Blue */
+        #00a3e8 25%,       /* Bright Blue */
+        #b5e51d 37.5%,     /* Lime Green */
+        #ffffff 50%,       /* White */
+        #ffc90d 62.5%,     /* Bright Yellow */
+        #fc6667 75%,       /* Coral Red */
+        #feaec9 87.5%,     /* Pink */
+        #000000 100%);     /* Black */
+    margin: 0;
+}
+
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+    background: url('https://i.imgur.com/tYBXOpv.jpeg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    /* Position absolute to overlap text */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    opacity: 0;
+    /* Start invisible */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    /* Smooth transition */
+}
+
+.rainbow-btn {
+    display: inline-block;
+}

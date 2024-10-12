@@ -2,7 +2,8 @@
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
     max-width:90%;
-    column-gap:1em
+    column-gap:1em;
+    margin-top: 1em;
 }
     
 .about-item {
@@ -29,4 +30,34 @@ p,li {
         display:flex;
         flex-direction:column
     }
+}
+
+.rainbow-shadow {
+    background: linear-gradient(90deg, #FCF434 0%, #FFFFFF 33%, #9C59D1 66%, #000000 100%);
+    padding: .5em;
+}
+
+.divider {
+    height: 10px;
+    /* Height of the divider line */
+    background: linear-gradient(90deg, #FCF434 0%, #FFFFFF 33%, #9C59D1 66%, #000000 100%);
+
+    margin: 0;
+}
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+    background: url('https://i.imgur.com/vW9Ihfe.jpeg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    /* Position absolute to overlap text */
+    top: 0;
+    /* Align to the top */
+    left: 0;
+    /* Align to the left */
+    opacity: 0;
+    /* Start invisible */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    /* Smooth transition */
 }
