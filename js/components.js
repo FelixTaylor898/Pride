@@ -7,8 +7,8 @@ class Header extends HTMLElement {
               <nav class="navbar navbar-dark bg-dark">
                   <div class="container-fluid">
                       <a class="navbar-brand" href="index.html">Home</a>
-                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-label="Menu toggle" aria-haspopup="true"
-                          aria-controls="#collapsingNavbar3Home" data-target="#collapsingNavbar3Home">
+                      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                          data-target="#collapsingNavbar3Home">
                           <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="navbar-collapse collapse" id="collapsingNavbar3Home">
@@ -123,4 +123,3 @@ class Footer extends HTMLElement {
 
 customElements.define('rb-header', Header);
 customElements.define('rb-footer', Footer);
-
