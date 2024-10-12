@@ -15,15 +15,16 @@
         content="Shenandoah Valley Pride Festival | Harrisonburg, VA Celebrating the diversity of the LGBTQ community in the Shenandoah Valley">
     <meta property="og:url" content="http://www.shenandoahvalleypride.org/perform.html">
     <meta property="og:title" content="Perform | Shenandoah Valley Pride">
-    
+
     <!-- Style imports !-->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/perform.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/v.css">
 
     <link rel="icon" href="images/rainbow.png">
-    
+
     <!-- Scripts !-->
     <script src="js/cookie.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,31 +38,94 @@
     </script>
     <script src="js/components.js"></script>
     <script src="https://kit.fontawesome.com/7bae310c37.js" crossorigin="anonymous"></script>
-    
+
     <title>Perform | Shenandoah Valley Pride</title>
 </head>
 
 <body>
 
-    <rb-header></rb-header>
+    <header>
+        <rb-header></rb-header>
+    </header>
 
-    <!-- Main content !-->
-    <section aria-label="Perform page content" class="content">
-        <div class="center">
-            <div class="v-info">
-                <h1>Perform</h1>
-                <img src="images/pridelogo.png" aria-hidden="true" alt="Shenandoah Valley Pride logo">
-                <br>
-                <p>Performers are the heart of Shenandoah Valley Pride, bringing energy and entertainment to our celebration! 
-                If you're a talented artist or group ready to showcase your skills, please complete <a href="https://docs.google.com/forms/d/e/1FAIpQLScdQcKTPKeAr1YhKflSIZ0IFN2kx3RPlr2Ouq7Kzy6QOc01TA/viewform?vc=0&c=0&w=1&flr=0&pli=1" target="_blank">this form</a>
-                 with your details.</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScdQcKTPKeAr1YhKflSIZ0IFN2kx3RPlr2Ouq7Kzy6QOc01TA/viewform?vc=0&c=0&w=1&flr=0&pli=1"
-                    width="600" height="600"></iframe>
-            </div>
+    <section aria-label="Landing page" class="hero center">
+        <div class="hero-image" aria-label="A bisexual pride flag waving in the sky"></div>
+        <div class="hero-content">
+            <h1>Perform</h1>
+            <p>Sign up to perform at Shenandoah Valley Pride</p>
         </div>
     </section>
+    <div class="divider"></div>
 
-    <rb-footer></rb-footer>
+    <div id="wrapper">
+
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo and Title -->
+                <div class="logo">
+                    <span class="symbol">
+                        <img src="images/bisexual-heart.png" alt="Bisexual flag heart" />
+                    </span>
+                    <div class="title-wrapper">
+                        <span class="title">
+                            Perform at Shenandoah Valley Pride
+                        </span>
+                    </div>
+                </div>
+        </header>
+
+        <div id="main">
+            <div class="inner">
+                <header>
+                    <h2>Calling all performers!</h2>
+                    <p class="justify">Performers are the heart of Shenandoah Valley Pride, bringing energy and
+                        entertainment to our
+                        celebration!
+                        If you're a talented artist or group ready to showcase your skills, please complete the form
+                        below (or <a class="link"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLScdQcKTPKeAr1YhKflSIZ0IFN2kx3RPlr2Ouq7Kzy6QOc01TA/viewform"
+                            target="_blank">click here</a>) to sign up.</p>
+                </header>
+
+            </div>
+            <div class="center">
+                <div class="spinner-container">
+                    <div class="spinner"></div>
+                </div>
+                <div class="iframe-container">
+
+                    <iframe id="gradient-iframe"
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScdQcKTPKeAr1YhKflSIZ0IFN2kx3RPlr2Ouq7Kzy6QOc01TA/viewform"
+                        width="650" height="600"></iframe>
+                </div>
+            </div>
+
+        </div>
+        <rb-footer></rb-footer>
+
+    </div>
 </body>
+
+<script>
+    window.addEventListener('load', () => {
+        const heroSection = document.querySelector('.hero-image');
+        heroSection.classList.add('visible');
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        const iframe = document.getElementById("gradient-iframe");
+        const container = iframe.parentElement;
+        const spinner = document.querySelector(".spinner");
+        // Show spinner when iframe is loading
+        spinner.style.display = "block";
+        iframe.onload = function() {
+            // Hide the spinner once the iframe has loaded
+            spinner.style.display = "none";
+            spinner.parentElement.style.display = "none";
+            // Make the container and iframe visible
+            container.style.opacity = 1;
+        };
+    });
+</script>
 
 </html>

@@ -42,27 +42,59 @@
 
 <body>
 
-    <rb-header></rb-header>
+    <header>
+        <rb-header></rb-header>
+    </header>
+
+    <section aria-label="Landing page" class="hero center">
+        <div class="hero-image" aria-label="A non-binary pride flag waving in the sky"></div>
+        <div class="hero-content">
+            <h1>About</h1>
+            <p>Learn about Shenandoah Valley Pride</p>
+        </div>
+    </section>
+    <div class="divider"></div>
 
 
-        <!-- Main content !-->
-        <section aria-label="About page content" class="content">
-            <h1 class="center">About</h1>
-            <div class="center"><img aria-hidden="true" src="images/pridelogo.png" alt="Shenandoah Valley Pride logo">
-            </div>
-            <br>
-            <div class="center">
-                <div class="flex-container">
-                    <p class="left about-text">Shenandoah Valley Pride Alliance, Inc. is a 501c3 nonprofit organization
+    <div id="wrapper">
+
+        <!-- Header -->
+
+        <header id="header">
+            <div class="inner">
+
+                <!-- Logo and Title -->
+                <div class="logo">
+                    <span class="symbol">
+                        <img src="images/non-binary-heart.png" alt="Non-binary flag heart" />
+                    </span>
+                    <div class="title-wrapper">
+                        <span class="title">
+                            About Shenandoah Valley Pride
+                        </span>
+                    </div>
+                </div>
+        </header>
+
+
+
+        <div id="main">
+            <div class="inner">
+                <header>
+                    <h2>Meet our team</h2>
+                    <p class="justify">Shenandoah Valley Pride Alliance, Inc. is a 501c3 nonprofit organization
                         dedicated to promoting understanding of the LGBTQ community through outreach and education. Our
                         mission includes providing education on LGBTQ issues through sponsored presentations and
                         outreach
                         efforts throughout the year. Additionally, we host an annual Pride Festival event in the summer,
-                        bringing the community together to foster greater understanding of the LGBTQ community. </p>
-                </div>
-            </div>
-            <hr>
-            <h2 class="center">Meet Our Team</h2>
+                        bringing the community together to foster greater understanding of the LGBTQ community.
+                    </p>
+
+            </header>
+
+        </div>
+                <!-- Main content !-->
+        <section aria-label="About page content" class="content">
             <div class="center">
                 <div class="about-grid">
                     <div class="center about-box">
@@ -114,6 +146,7 @@
                         <div>
                         </div>
                         <div class="about-item">
+                                                <div class="about-item"><img src="images/question.png" alt="A silhouette of a person with a question mark"></div>
                             <div class="left">
                                 <h3>Secretary: John Del Toro</h3>
                             </div>
@@ -160,7 +193,19 @@
             </div>
         </section>
 
+</div>
+
+
+
+
         <rb-footer></rb-footer>
 </body>
+
+<script>
+    window.addEventListener('load', () => {
+        const heroSection = document.querySelector('.hero-image');
+        heroSection.classList.add('visible');
+    });
+</script>
 
 </html>
