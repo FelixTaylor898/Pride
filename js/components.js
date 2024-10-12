@@ -80,7 +80,7 @@ class Footer extends HTMLElement {
           <div class="mobile-footer">
               <div class="rainbow-shadow">
                   <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
-                      <div class="container-fluid"><a class="navbar-brand">&copy; 2024 | Shenandoah Valley Pride
+                      <div class="container-fluid"><a class="navbar-brand">&copy; 2025 | Shenandoah Valley Pride
                               Alliance
                               Inc.</a>
                       </div>
@@ -92,7 +92,7 @@ class Footer extends HTMLElement {
 
               <div class="rainbow-shadow">
                   <footer class="navbar navbar-expand-lg navbar-dark bg-dark">
-                      <div class="container-fluid"><a class="navbar-brand">&copy; 2024 | Shenandoah Valley Pride
+                      <div class="container-fluid"><a class="navbar-brand">&copy; 2025 | Shenandoah Valley Pride
                               Alliance
                               Inc.</a>
                           <div class="collapse navbar-collapse">
