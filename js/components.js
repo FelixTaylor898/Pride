@@ -8,10 +8,10 @@ class Header extends HTMLElement {
                   <div class="container-fluid">
                       <a class="navbar-brand" href="index.html">Home</a>
                       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" aria-label="Menu toggle" aria-haspopup="true"
-                          aria-expanded="false" aria-controls="collapsingNavbar3Home" data-target="#collapsingNavbar3Home">
+                          aria-controls="#collapsingNavbar3Home" data-target="#collapsingNavbar3Home">
                           <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home" aria-hidden="true">
+                      <div class="navbar-collapse collapse" id="collapsingNavbar3Home">
                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                               <li class="nav-item"><a class="nav-link" href="volunteer.html">Volunteer</a></li>
                               <li class="nav-item"><a class="nav-link" href="perform.html">Perform</a></li>
